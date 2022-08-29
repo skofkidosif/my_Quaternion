@@ -1,14 +1,4 @@
 import numpy as np
-import quaternion
-import matplotlib.pyplot as plt
-
-
-
-# x1 = np.array([0, 0])
-# y1 = np.array([0, 10])
-# z1 = np.array([0, 0])
-
-
 
 
 def mat_x(alpha):
@@ -50,6 +40,3 @@ def draw_new(angle_x,angle_y,angle_z,a,b,c):
     B=(x_new,y_new,z_new)
     return (B)
 
-
-
-#draw_new(90,0,0,x1,y1,z1)

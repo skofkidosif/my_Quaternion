@@ -1,11 +1,11 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-fig = plt.figure()
-ax = plt.axes(projection='3d')
-ax.set_xlim(0, 15)
-ax.set_ylim(0, 15)
-ax.set_zlim(0, 15)
+# fig = plt.figure()
+# ax = plt.axes(projection='3d')
+# ax.set_xlim(0, 15)
+# ax.set_ylim(0, 15)
+# ax.set_zlim(0, 15)
 
 def cube():
     x1 = np.array([0, 0])
@@ -44,16 +44,23 @@ def cube():
     x12 = np.array([0, 10])
     y12 = np.array([0, 0])
     z12 = np.array([10, 10])
-    ax.plot3D(x1, y1, z1)
-    ax.plot3D(x2, y2, z2)
-    ax.plot3D(x3, y3, z3)
-    ax.plot3D(x4, y4, z4)
-    ax.plot3D(x5, y5, z5)
-    ax.plot3D(x6, y6, z6)
-    ax.plot3D(x7, y7, z7)
-    ax.plot3D(x8, y8, z8)
-    ax.plot3D(x9, y9, z9)
-    ax.plot3D(x10, y10, z10)
-    ax.plot3D(x11, y11, z11)
-    ax.plot3D(x12, y12, z12)
+
+    x = [x1, x2, x3, x4, x5, x6, x7, x8, x9, x10, x11, x12]
+    y = [y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y11, y12]
+    z = [z1, z2, z3, z4, z5, z6, z7, z8, z9, z10, z11, z12]
+
+    a = (x,y,z)
+    return a
+
+# cub = cube()
+#
+# x=cub[0]
+# y=cub[1]
+# z=cub[2]
+#
+# for i in range(12):
+#     ax.plot3D(x[i], y[i], z[i])
+#
+# plt.show()
+
 
